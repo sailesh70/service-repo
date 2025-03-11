@@ -3,6 +3,7 @@ name: Generate Dockerfile
 on:
   repository_dispatch:
     types: [trigger-service]
+  workflow_dispatch:
 
 jobs:
   generate-dockerfile:
