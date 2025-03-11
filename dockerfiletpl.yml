@@ -1,0 +1,11 @@
+ref: "main"
+context: "publish/ExampleService/*/"
+imageName: "nginx-service"
+envs:
+  NGINX_PORT: "8080"
+port: 8080
+cmd: ["nginx", "-g", "daemon off;"]
+labels:
+  title: "Nginx Example Service"
+variants:
+  - path: "Dockerfile.tpl"
